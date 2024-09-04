@@ -56,7 +56,7 @@ class AppTest {
     public void classBankAccount1() {
         try {
             // check if there are already fields declared
-            assertTrue(BankAccount.class.getDeclaredFields().length != 0, "Class Person hasn't declared any members yet.");
+            assertTrue(BankAccount.class.getDeclaredFields().length != 0, "Class BankAccount hasn't declared any members yet.");
             // check if all fields are named correctly, private,...
             Field balance = BankAccount.class.getDeclaredField("balance");
             assertTrue(Modifier.toString(balance.getModifiers()).equals("private") && balance.getType().toString().equals("double"), "Please check your field names and modifiers!");
@@ -170,7 +170,7 @@ class AppTest {
     public void classSavingsAccount1() {
         try {
             // check if there are already fields declared
-            assertTrue(SavingsAccount.class.getDeclaredFields().length != 0, "Class Person hasn't declared any members yet.");
+            assertTrue(SavingsAccount.class.getDeclaredFields().length != 0, "Class SavingsAccount hasn't declared any members yet.");
             // check if all fields are named correctly, private,...
             Field balance = SavingsAccount.class.getDeclaredField("interestRate");
             assertTrue(Modifier.toString(balance.getModifiers()).equals("private") && balance.getType().toString().equals("double"), "Please check your field names and modifiers!");
@@ -220,10 +220,10 @@ class AppTest {
             Field balance = BankAccount.class.getDeclaredField("balance");
             balance.setAccessible(true);
             m.invoke(p);
-            assertEquals(0.0, (double) balance.get(p), "Interst not computed correctly.");
+            assertEquals(0.0, (double) balance.get(p), "Interest not computed correctly.");
             balance.set(p, 2000);
             m.invoke(p);
-            assertEquals(2050.0, (double) balance.get(p), "Interst not computed correctly.");
+            assertEquals(2050.0, (double) balance.get(p), "Interest not computed correctly.");
         } catch (Exception e) {
             e.printStackTrace();
             fail("Method calculateInterest missing or invalid parameters.");
@@ -253,7 +253,7 @@ class AppTest {
     public void classCheckingAccount1() {
         try {
             // check if there are already fields declared
-            assertTrue(CheckingAccount.class.getDeclaredFields().length != 0, "Class Person hasn't declared any members yet.");
+            assertTrue(CheckingAccount.class.getDeclaredFields().length != 0, "Class CheckingAccount hasn't declared any members yet.");
             // check if all fields are named correctly, private,...
             Field transactions = CheckingAccount.class.getDeclaredField("transactions");
             assertTrue(Modifier.toString(transactions.getModifiers()).equals("private") &&
