@@ -18,3 +18,288 @@ jobs:
         with:
           distribution: 'corretto'
           java-version: '16'
+      - name: Check class memeber (1 Point)
+        id: check-class-memeber-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class memeber (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount1
+          timeout: 1
+          max-score: 1
+      - name: Check class modifier (1 Point)
+        id: check-class-modifier-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class modifier (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount2
+          timeout: 1
+          max-score: 1
+      - name: Check class constructors (1 Point)
+        id: check-class-constructors-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class constructors (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classBankAccount3
+          timeout: 1
+          max-score: 1
+      - name: Check deposit (1 Point)
+        id: check-deposit-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check deposit (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.deposit
+          timeout: 1
+          max-score: 1
+      - name: Check withdraw (1 Point)
+        id: check-withdraw-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check withdraw (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.withdraw
+          timeout: 1
+          max-score: 1
+      - name: Check getBalance (1 Point)
+        id: check-getbalance-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check getBalance (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.getBalance
+          timeout: 1
+          max-score: 1
+      - name: Check calculateFees (1 Point)
+        id: check-calculatefees-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check calculateFees (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.calculateFees
+          timeout: 1
+          max-score: 1
+      - name: Check toString (1 Point)
+        id: check-tostring-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check toString (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.bankAccountToString
+          timeout: 1
+          max-score: 1
+      - name: Check class SavingsAccount (1 Point)
+        id: check-class-savingsaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class SavingsAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classSavingsAccount*
+          timeout: 1
+          max-score: 1
+      - name: Check calculateFeesSavingsAccount (1 Point)
+        id: check-calculatefeessavingsaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check calculateFeesSavingsAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.calculateFeesSavingsAccount
+          timeout: 1
+          max-score: 1
+      - name: Check calculateInterest (1 Point)
+        id: check-calculateinterest-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check calculateInterest (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.calculateInterest
+          timeout: 1
+          max-score: 1
+      - name: Check interestRateGetterSetter (1 Point)
+        id: check-interestrategettersetter-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check interestRateGetterSetter (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.interestRateGetterSetter
+          timeout: 1
+          max-score: 1
+      - name: Check class member (1 Point)
+        id: check-class-member-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class member (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classCheckingAccount1
+          timeout: 1
+          max-score: 1
+      - name: Check constructors (1 Point)
+        id: check-constructors-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check constructors (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classCheckingAccount2
+          timeout: 1
+          max-score: 1
+      - name: Check deposit CheckingAccount (1 Point)
+        id: check-deposit-checkingaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check deposit CheckingAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.depositCheckingAccount
+          timeout: 1
+          max-score: 1
+      - name: Check withdraw CheckingAccount (1 Point)
+        id: check-withdraw-checkingaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check withdraw CheckingAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.withdrawCheckingAccount
+          timeout: 1
+          max-score: 1
+      - name: Check calculateFees CheckingAccount (1 Point)
+        id: check-calculatefees-checkingaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check calculateFees CheckingAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.calculateFeesCheckingAccount
+          timeout: 1
+          max-score: 1
+      - name: Check Interface (1 Point)
+        id: check-interface-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check Interface (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.transferTransferBehaviour
+          timeout: 1
+          max-score: 1
+      - name: Check class RegularTransfer (1 Point)
+        id: check-class-regulartransfer-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class RegularTransfer (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.transferRegularTransfer*
+          timeout: 1
+          max-score: 1
+      - name: Check class TransferNotSupported (1 Point)
+        id: check-class-transfernotsupported-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class TransferNotSupported (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.transferTransferNotSupported
+          timeout: 1
+          max-score: 1
+      - name: Check performTransfer (1 Point)
+        id: check-performtransfer-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check performTransfer (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.performTransfer
+          timeout: 1
+          max-score: 1
+      - name: Check member transferBehaviour (1 Point)
+        id: check-member-transferbehaviour-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check member transferBehaviour (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.checkTransferBehaviour
+          timeout: 1
+          max-score: 1
+      - name: Check compareTo (2 Points)
+        id: check-compareto-2-points
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check compareTo (2 Points)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.compareTo
+          timeout: 1
+          max-score: 2
+      - name: Check class Georgina (1 Point)
+        id: check-class-georgina-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check class Georgina (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.classGeorgina
+          timeout: 1
+          max-score: 1
+      - name: Check addAccount (1 Point)
+        id: check-addaccount-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check addAccount (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.addAccount
+          timeout: 1
+          max-score: 1
+      - name: Check printAccounts Ascending Order (1 Point)
+        id: check-printaccounts-ascending-order-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check printAccounts Ascending Order (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.printAccounts1
+          timeout: 1
+          max-score: 1
+      - name: Check printAccounts descending order (1 Point)
+        id: check-printaccounts-descending-order-1-point
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check printAccounts descending order (1 Point)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.printAccounts2
+          timeout: 1
+          max-score: 1
+      - name: Check simulateFinanicalProspects (2 Points)
+        id: check-simulatefinanicalprospects-2-points
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Check simulateFinanicalProspects (2 Points)
+          setup-command: ''
+          command: gradle test --tests at.ac.fhcampuswien.AppTest.simulateFinancialProspect*
+          timeout: 1
+          max-score: 2
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          CHECK-CLASS-MEMEBER-1-POINT_RESULTS: "${{steps.check-class-memeber-1-point.outputs.result}}"
+          CHECK-CLASS-MODIFIER-1-POINT_RESULTS: "${{steps.check-class-modifier-1-point.outputs.result}}"
+          CHECK-CLASS-CONSTRUCTORS-1-POINT_RESULTS: "${{steps.check-class-constructors-1-point.outputs.result}}"
+          CHECK-DEPOSIT-1-POINT_RESULTS: "${{steps.check-deposit-1-point.outputs.result}}"
+          CHECK-WITHDRAW-1-POINT_RESULTS: "${{steps.check-withdraw-1-point.outputs.result}}"
+          CHECK-GETBALANCE-1-POINT_RESULTS: "${{steps.check-getbalance-1-point.outputs.result}}"
+          CHECK-CALCULATEFEES-1-POINT_RESULTS: "${{steps.check-calculatefees-1-point.outputs.result}}"
+          CHECK-TOSTRING-1-POINT_RESULTS: "${{steps.check-tostring-1-point.outputs.result}}"
+          CHECK-CLASS-SAVINGSACCOUNT-1-POINT_RESULTS: "${{steps.check-class-savingsaccount-1-point.outputs.result}}"
+          CHECK-CALCULATEFEESSAVINGSACCOUNT-1-POINT_RESULTS: "${{steps.check-calculatefeessavingsaccount-1-point.outputs.result}}"
+          CHECK-CALCULATEINTEREST-1-POINT_RESULTS: "${{steps.check-calculateinterest-1-point.outputs.result}}"
+          CHECK-INTERESTRATEGETTERSETTER-1-POINT_RESULTS: "${{steps.check-interestrategettersetter-1-point.outputs.result}}"
+          CHECK-CLASS-MEMBER-1-POINT_RESULTS: "${{steps.check-class-member-1-point.outputs.result}}"
+          CHECK-CONSTRUCTORS-1-POINT_RESULTS: "${{steps.check-constructors-1-point.outputs.result}}"
+          CHECK-DEPOSIT-CHECKINGACCOUNT-1-POINT_RESULTS: "${{steps.check-deposit-checkingaccount-1-point.outputs.result}}"
+          CHECK-WITHDRAW-CHECKINGACCOUNT-1-POINT_RESULTS: "${{steps.check-withdraw-checkingaccount-1-point.outputs.result}}"
+          CHECK-CALCULATEFEES-CHECKINGACCOUNT-1-POINT_RESULTS: "${{steps.check-calculatefees-checkingaccount-1-point.outputs.result}}"
+          CHECK-INTERFACE-1-POINT_RESULTS: "${{steps.check-interface-1-point.outputs.result}}"
+          CHECK-CLASS-REGULARTRANSFER-1-POINT_RESULTS: "${{steps.check-class-regulartransfer-1-point.outputs.result}}"
+          CHECK-CLASS-TRANSFERNOTSUPPORTED-1-POINT_RESULTS: "${{steps.check-class-transfernotsupported-1-point.outputs.result}}"
+          CHECK-PERFORMTRANSFER-1-POINT_RESULTS: "${{steps.check-performtransfer-1-point.outputs.result}}"
+          CHECK-MEMBER-TRANSFERBEHAVIOUR-1-POINT_RESULTS: "${{steps.check-member-transferbehaviour-1-point.outputs.result}}"
+          CHECK-COMPARETO-2-POINTS_RESULTS: "${{steps.check-compareto-2-points.outputs.result}}"
+          CHECK-CLASS-GEORGINA-1-POINT_RESULTS: "${{steps.check-class-georgina-1-point.outputs.result}}"
+          CHECK-ADDACCOUNT-1-POINT_RESULTS: "${{steps.check-addaccount-1-point.outputs.result}}"
+          CHECK-PRINTACCOUNTS-ASCENDING-ORDER-1-POINT_RESULTS: "${{steps.check-printaccounts-ascending-order-1-point.outputs.result}}"
+          CHECK-PRINTACCOUNTS-DESCENDING-ORDER-1-POINT_RESULTS: "${{steps.check-printaccounts-descending-order-1-point.outputs.result}}"
+          CHECK-SIMULATEFINANICALPROSPECTS-2-POINTS_RESULTS: "${{steps.check-simulatefinanicalprospects-2-points.outputs.result}}"
+        with:
+          runners: check-class-memeber-1-point,check-class-modifier-1-point,check-class-constructors-1-point,check-deposit-1-point,check-withdraw-1-point,check-getbalance-1-point,check-calculatefees-1-point,check-tostring-1-point,check-class-savingsaccount-1-point,check-calculatefeessavingsaccount-1-point,check-calculateinterest-1-point,check-interestrategettersetter-1-point,check-class-member-1-point,check-constructors-1-point,check-deposit-checkingaccount-1-point,check-withdraw-checkingaccount-1-point,check-calculatefees-checkingaccount-1-point,check-interface-1-point,check-class-regulartransfer-1-point,check-class-transfernotsupported-1-point,check-performtransfer-1-point,check-member-transferbehaviour-1-point,check-compareto-2-points,check-class-georgina-1-point,check-addaccount-1-point,check-printaccounts-ascending-order-1-point,check-printaccounts-descending-order-1-point,check-simulatefinanicalprospects-2-points
